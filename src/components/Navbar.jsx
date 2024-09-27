@@ -7,7 +7,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaGithub } from 'react-icons/fa';
 import { FaHackerrank } from 'react-icons/fa';
 import { FaCat } from 'react-icons/fa';
-
+import { FaMedium } from "react-icons/fa6";
 
 const Navbar = () =>{
     return(
@@ -29,15 +29,25 @@ const Navbar = () =>{
     </div>
 
     <div className='m-8 flex items-center  justify-right gap-4 text-2xl '>
+
+    <a href="https://medium.com/@pinkigupta0506" rel='noopener noreferrer' target='blank
+            '>
+                <FaMedium className='text-white hover:-translate-y-2 transition ease-in-out delay-100'/>  
+            </a>
+
+        
             <a href="https://www.linkedin.com/in/pinki-gupta-a2738a25a/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className='text-white transition ease-in-out delay-100 hover:-translate-y-1'></FaLinkedin>
+
             </a>
+
+            
             <a href="" rel='noopener noreferrer' target='blank'>
-            <FaHackerrank className='hover:-translate-y-2 transition ease-in-out delay-100'></FaHackerrank></a>
+            <FaHackerrank className='hover:-translate-y-2 transition ease-in-out text-white delay-100'></FaHackerrank></a>
             <a href="https://x.com/Pinki_gupta0506" target='blank' rel='noopener noreferrer'>
             <BsTwitterX className='text-white hover:-translate-y-2 transition ease-in-out delay-100' ></BsTwitterX> 
             </a>
-            <a href="https://github.com/Pinkigupta05" rel='noopener noreferrer' target='blank'><FaGithub className='hover:-translate-y-2 transition ease-in-out delay-100'></FaGithub></a>
+            <a href="https://github.com/Pinkigupta05" rel='noopener noreferrer' target='blank'><FaGithub className='hover:-translate-y-2 text-white transition ease-in-out delay-100'></FaGithub></a>
             <a href="https://www.instagram.com/_pinkigupta_04/?next=%2F" rel='noopener noreferrer' target='blank
             '>
                 <FaInstagram className='text-white hover:-translate-y-2 transition ease-in-out delay-100'/>  

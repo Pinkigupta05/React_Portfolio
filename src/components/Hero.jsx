@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import Profilepic from  "../assets/hero.JPG";
 import { motion } from "framer-motion"
 import React from 'react'
+import { BiDownload } from "react-icons/bi";
 const container = (delay) => ({
     hidden:{x:-100,opaciry:0},
     visible:{
@@ -24,13 +25,13 @@ const Hero=()=>{
 <motion.h1 variants={container(0.5)}
             initial="hidden"
             animate="visible"
-             className='pb-14 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl hover:underline decoration-violet-500 transition duration-700 ease-in-out'>
+             className='pb-14 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl hover:underline decoration-violet-500 transition duration-700 ease-in-out '>
                Pinki Gupta
             </motion.h1>
             <motion.span variants={container(1)}
             initial="hidden"
             animate="visible" className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
-              Software Developer
+             Frontened Developer
             </motion.span>
             <motion.p
               variants={container(1.5)}
@@ -40,10 +41,10 @@ const Hero=()=>{
               {HERO_CONTENT}
             </motion.p>
             <div className='px-2'> 
-            <a href='https://drive.google.com/file/d/1TKLLRQs0gfiCRngDRHas6luPEci7Do6y/view' target='_blank'> 
+            <a href='https://drive.google.com/file/d/1DZzImetrfLnDe_IKgQMa6mab4sVcg_0-/view?usp=drivesdk' target='_blank'> 
             <motion.button variants={container(1.5)}
             initial="hidden"
-            animate="visible" className='rounded-md border my-2 px-4 py-4 border-blue-900  bg-gradient-to-r from-cyan-900 to-blue-800 hover:from-purple-900 hover:to-pink-800'>Download CV</motion.button>
+            animate="visible" className='rounded-md border my-2 px-4 py-4 border-blue-900  bg-gradient-to-r from-cyan-800 to-blue-800 hover:from-purple-900 text-yellow-200 hover:to-pink-800 '>Resume <BiDownload/></motion.button>
             </a>
             </div>
 </div>

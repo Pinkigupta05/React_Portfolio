@@ -5,12 +5,15 @@ import About from './components/About';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Foreground from './components/Foreground';
-
+import Technologies from './components/Technologies';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Projects from './components/Projects';
 function App() {
   return (
     <div className=" h-screen w-full text-neutral-300  selection:text-cyan-900">
       {/* Full-width fixed background */}
-      <div className="fixed top-0 -z-10 h-full left-0 w-full">
+      <div className="fixed  top-0 -z-10 h-full left-0 w-full">
         {/* Background Image */}
         <div className="absolute inset-0 -z-10 h-screen w-full px-5 py-24 top-0 bg-cover bg-center bg-[url('/image.png')]">
         
@@ -25,12 +28,12 @@ function App() {
         <Hero />
         {/* Uncomment these components as needed */}
         <About />
-        {/* <Technologies/> */}
+        <Technologies/>
         {/* <Experience/> */}
-        {/* <Projects/> */}
-        {/* <Contact/> */}
+        <Projects/>
+        <Contact/>
         {/* <Analytics/> */}
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </div>
   );
