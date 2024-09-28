@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import Profilepic from  "../assets/hero.JPG";
+import Profilepic from  "../assets/hero.jpg";
 import { motion } from "framer-motion"
 import React from 'react'
 import { BiDownload } from "react-icons/bi";
